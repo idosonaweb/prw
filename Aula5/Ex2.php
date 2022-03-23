@@ -1,6 +1,6 @@
 <?php
 
-    $Nota1 = 7 ;
+    $Nota1 = 2 ;
 
     $Nota2 = 8 ;
 

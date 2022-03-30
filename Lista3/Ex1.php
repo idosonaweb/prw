@@ -1,6 +1,6 @@
 <?php
 
-    $Palavra = "  Instituto Federal " ;
+    $Palavra = " O Instituto Federal é incrível" ;
     
     $Palavra = trim($Palavra);
     

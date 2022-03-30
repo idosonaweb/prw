@@ -1,17 +1,17 @@
 <?php
 
-    $Data = date("m-d-Y");
+    $Data = "24/11/1953" ;
 
     echo $Data. "<br>" ;
 
-    $Dia = substr($data,3,2);
+    $Dia = substr($Data,3,2);
 
-    $Mês = substr($data,0,2);
+    $Mês = substr($Data,0,2);
 
-    $Ano = substr($data,6,4);
+    $Ano = substr($Data,6,4);
 
-    $Nova_Data = $Dia . "/" . $Mês . "/" . $Ano;
+    $Nova_Data =  $Dia . "/" . $Mês . "/" . $Ano;
 
-    echo $Nova_Data;
+    echo "<br>" . $Nova_Data;
 
 ?>

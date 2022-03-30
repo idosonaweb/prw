@@ -4,6 +4,6 @@
     
     $Palavra = trim($Palavra);
     
-    echo "A palavra '" . $Palavra . "' contém " . strlen($Palavra) . " caracteres";
+    echo "A palavra  '" . $Palavra . "'  contém " . strlen($Palavra) . " caracteres";
 
 ?>

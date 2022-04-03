@@ -2,15 +2,19 @@
 
     $Diasemana = array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado');
 
-    $Data = date('Y/m/d');
+    $Data = date('07/02/2018');
 
-    $Dia = substr($Data,8,2);
+    $Partes = explode("/", $Data);
+    
+    $P1 = $Partes[0];
+    
+    $P2 = $Partes[1];
+    
+    $P3 = $Partes[2];
 
-    $Mês = substr($Data,5,2);
-
-    $Ano = substr($Data,0,4);
+    $Novo_Formato = $P1 . "/" . $P2 . "/" . $P3 ;
 
     $Semana_numero = date('w', strtotime($Data));
 
-    echo "Na data " .  $Dia . "/" . $Mês . "/" . $Ano . ", foi/será " . $Diasemana[$Semana_numero];
+    echo "Na data " .  $Novo_Formato . ", foi/será " . $Diasemana[$Semana_numero];
 ?>

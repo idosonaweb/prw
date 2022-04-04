@@ -6,9 +6,9 @@
 
     $N2 = $_GET["numero2"] ;
 
-    $Soma = $_GET["numero1"]  + $_GET["numero2"];
+    $Soma = $_GET["numero1"]  + ($_GET["numero2"]);
 
-    $Subtrair = $_GET["numero1"]  - $_GET["numero2"];
+    $Subtrair = $_GET["numero1"]  - ($_GET["numero2"]);
 
     $Dividir = $_GET["numero1"]  / $_GET["numero2"];
 

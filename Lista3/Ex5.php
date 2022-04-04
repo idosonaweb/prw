@@ -2,7 +2,7 @@
 
     $Diasemana = array('Domingo', 'Segunda', 'Terça', 'Quarta', 'Quinta', 'Sexta', 'Sabado');
 
-    $Data = date('07/02/2018');
+    $Data = '2018/02/07' ;
 
     $Partes = explode("/", $Data);
     
@@ -12,7 +12,7 @@
     
     $P3 = $Partes[2];
 
-    $Novo_Formato = $P1 . "/" . $P2 . "/" . $P3 ;
+    $Novo_Formato = $P3 . "/" . $P2 . "/" . $P1 ;
 
     $Semana_numero = date('w', strtotime($Data));
 

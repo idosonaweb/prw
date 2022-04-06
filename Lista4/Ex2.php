@@ -16,25 +16,19 @@
 
     if ($_GET["SelMenu"] == "Incompleto") 
     {
-        $Ensino = "Incompleto" ;
-
-        echo "Ensino médio: " . $Ensino . "<br><br>" ;
+        $Ensino = "Ensino médio Incompleto" ;
     }
     else
     {
         if ($_GET["SelMenu"] == "Cursando") 
         {
-            $Ensino = "Cursando" ;
-
-            echo "Ensino médio: " . $Ensino . "<br><br>" ;
+            $Ensino = "Ensino médio Cursando" ;
         }
         else
         {
             if ($_GET["SelMenu"] == "Completo") 
             {
-                $Ensino = "Completo" ;
-
-                echo "Ensino médio: " . $Ensino . "<br><br>" ;
+                $Ensino = "Ensino médio Completo" ;
             }
         }
     }
@@ -45,7 +39,7 @@
         {
             if (isset($_GET["SelMenu"])) 
             {
-                echo "<h2>Usuário Cadastrado</h2><br><br>" ;
+                echo "<h2>Usuário Cadastrado</h2>" ;
                 
                 echo "Nome: " . $Nome . "<br><br>";
 
@@ -53,11 +47,13 @@
 
                 echo "Gênero: " . $Genero . "<br><br>" ;
 
-                echo "Linguagens Dominantes: " . $Linguagem . "<br><br>" ;
+                echo "Linguagens Dominantes: " ;
 
-                echo "Ensino médio: " . $Ensino . "<br><br>" ;
+                echo print_r($Linguagem) . " " ;
 
-                echo "Sobre o usuário: <br>" . $Descricao ;
+                echo $Ensino ;
+
+                echo "Sobre o usuário: <br><br>" . "'" . $Descricao . "' " ;
             }
         }   
     }

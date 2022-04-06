@@ -14,7 +14,7 @@
 
     $Multiplicacao = $_GET["numero1"]  * $_GET["numero2"];
 
-    if (isset($_GET["numero1"]) and isset($_GET["numero1"])) 
+    if (isset($_GET["numero1"]) and isset($_GET["numero2"])) 
     {
         if ($_GET["optOperacao"] == "Somar") 
         {

@@ -16,19 +16,19 @@
 
     if ($_GET["SelMenu"] == "Incompleto") 
     {
-        $Ensino = "Ensino médio Incompleto" ;
+        $Ensino = "Ensino médio: Incompleto" ;
     }
     else
     {
         if ($_GET["SelMenu"] == "Cursando") 
         {
-            $Ensino = "Ensino médio Cursando" ;
+            $Ensino = "Ensino médio: Cursando" ;
         }
         else
         {
             if ($_GET["SelMenu"] == "Completo") 
             {
-                $Ensino = "Ensino médio Completo" ;
+                $Ensino = "Ensino médio: Completo" ;
             }
         }
     }

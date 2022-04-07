@@ -102,7 +102,7 @@
                                                                     {
                                                                         if ($_GET["estado"] == "Paraná") 
                                                                         {
-                                                                            echo "A capital do Pará é Belém" ;
+                                                                            echo "A capital do Paraná é Curitiba" ;
                                                                         }
                                                                         else
                                                                         {
@@ -150,7 +150,7 @@
                                                                                                     {
                                                                                                         if ($_GET["estado"] == "Sergipe") 
                                                                                                         {
-                                                                                                            echo "A capital de Sergipe é Aracaju" ;
+                                                                                                            echo "A capital de Sergipe é João Pessoa" ;
                                                                                                         }
                                                                                                         else
                                                                                                         {

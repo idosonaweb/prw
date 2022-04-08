@@ -10,8 +10,6 @@
 
     $Genero = $_GET["optGenero"];
 
-    $Linguagem = $_GET["chkLing"];
-
     $Ensino = null ;
 
     if ($_GET["SelMenu"] == "Incompleto") 
@@ -35,26 +33,41 @@
 
     if (isset($_GET["optGenero"])) 
     {
-        if (isset($_GET["chkLing"])) 
+        if (isset($_GET["SelMenu"])) 
         {
-            if (isset($_GET["SelMenu"])) 
-            {
-                echo "<h2>Usuário Cadastrado</h2>" ;
+            echo "<h2>Usuário Cadastrado</h2>" ;
                 
-                echo "Nome: " . $Nome . "<br><br>";
+            echo "Nome: " . $Nome . "<br><br>";
 
-                echo "Idade: " . $Idade . "<br><br>";
+            echo "Idade: " . $Idade . "<br><br>";
 
-                echo "Gênero: " . $Genero . "<br><br>" ;
+            echo "Gênero: " . $Genero . "<br><br>" ;
 
-                echo "Linguagens Dominantes: " ;
+            echo "Linguagens Dominantes: " ;
 
-                echo print_r($Linguagem) . " " ;
-
-                echo $Ensino ;
-
-                echo "Sobre o usuário: <br><br>" . "'" . $Descricao . "' " ;
+            if (isset($_GET["chkPHP"])) 
+            {
+                echo "PHP  " ;
             }
+
+            if (isset($_GET["chkC"])) 
+            {
+                echo "C++  " ;
+            }
+
+            if (isset($_GET["chkJava"])) 
+            {
+                echo "Java  " ;
+            }
+
+            if (isset($_GET["chkPython"])) 
+            {
+                echo "Python  " ;
+            }
+
+            echo "<br><br>" . $Ensino ;
+
+            echo "<br><br>Sobre o usuário: <br><br>" . "'" . $Descricao . "' " ;
         }   
     }
 ?>

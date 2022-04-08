@@ -43,29 +43,29 @@
 
             echo "Gênero: " . $Genero . "<br><br>" ;
 
-            echo "Linguagens Dominantes: " ;
+            echo "Linguagens Dominantes: <br><br>" ;
 
             if (isset($_GET["chkPHP"])) 
             {
-                echo "PHP  " ;
+                echo "PHP  <br>" ;
             }
 
             if (isset($_GET["chkC"])) 
             {
-                echo "C++  " ;
+                echo "C++  <br>" ;
             }
 
             if (isset($_GET["chkJava"])) 
             {
-                echo "Java  " ;
+                echo "Java  <br>" ;
             }
 
             if (isset($_GET["chkPython"])) 
             {
-                echo "Python  " ;
+                echo "Python  <br>" ;
             }
 
-            echo "<br><br>" . $Ensino ;
+            echo "<br>" . $Ensino ;
 
             echo "<br><br>Sobre o usuário: <br><br>" . "'" . $Descricao . "' " ;
         }   

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 2 - Lista 4</title>
+</head>
+<body>
+
+    <h1>Cliente</h1>
+
+    <hr>
+
+    <form action = "Ex4.php" method = "GET">
+        
+        <div>
+
+            <label for = "nome">Nome: </label>
+            
+            <input type = "text" name = "nome"></input>
+
+        </div>
+
+        <div>
+
+            <p>Estado</p>
+
+            <select name = "SelMenu" value = "Menu" size = "9">
+
+                <option>São Paulo</option>
+
+                <option>Minas Gerais</option>
+
+                <option>Espírito Santo</option>
+
+                <option>Rio de Janeiro</option>
+
+                <option>Mato Grosso</option>
+
+                <option>Bahia</option>
+
+                <option>Distrito federal</option>
+
+                <option>Maranhão</option>
+
+                <option>Sergipe</option>
+
+            </select>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for = "CPF">CPF: </label>
+            
+            <input type = "text" name = "CPF" maxlength = "11"></input>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for = "RG">RG: </label>
+            
+            <input type = "text" name = "RG" maxlength = "11"></input>
+
+        </div>
+
+        <br>
+        
+        <div>
+            
+            <input type = "radio" name = "optGenero" value = "Masculino">Masculino</input>
+
+            <input type = "radio" name = "optGenero" value = "Feminino">Feminino</input>
+
+            <input type = "radio" name = "optGenero" value = "Outro">Outro</input>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for = "Saldo">Saldo do Cartão: R$</label>
+            
+            <input type = "text" name = "Saldo"></input>
+
+        </div>
+
+        <br>
+
+        <div>
+
+            <label for = "Total">Total da Compra: R$</label>
+            
+            <input type = "text" name = "Total"></input>
+
+        </div>
+
+        <br>
+
+        <button type = "submit">Salvar</button>
+
+    </form>
+
+</body>
+</html>

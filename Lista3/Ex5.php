@@ -2,7 +2,7 @@
 
     $Diasemana = array('Domingo', 'Segunda-feira', 'Terça-feira', 'Quarta-feira', 'Quinta-feira', 'Sexta-feira', 'Sabado');
 
-    $Data = '2018/02/07' ;
+    $Data = '2001/09/14' ;
 
     $Partes = explode("/", $Data);
     

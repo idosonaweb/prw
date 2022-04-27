@@ -19,7 +19,7 @@
         exit;
     }
 
-    printf("Banco de Dados conectado com sucesso \o/")
+    //printf("Banco de Dados conectado com sucesso \o/")
 
 
 ?>

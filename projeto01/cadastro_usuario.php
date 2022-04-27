@@ -16,7 +16,7 @@
 
     echo "Telefone: " . $Fone_Usuario . "</p>" ;
 
-    $sql = "INSERT TO usuario (nome_usuario, email_usuario, telefone_usuario)
+    $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario)
             values ('" . $Nome_Usuario. "', '" . $Email_Usuario . "', '" . $Fone_Usuario. "')" ;
 
     $result = mysqli_query($con, $sql) ;

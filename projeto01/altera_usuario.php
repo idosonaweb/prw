@@ -27,13 +27,13 @@
 
     <hr><br>
 
-    <form action = "cadastro_usuario.php" method = "GET">
+    <form action = "altera_usuario_exe.php" method = "GET">
         
         <div>
 
             <label for = "nome_usuario">Nome: </label>
             
-            <input type = "text" name = "nome_usuario" size = "50" value = "<?php echo $row['nome_usuario'] ?>"></input>
+            <input type = "text" name = "nome_usuario" size = "50" value = "<?php echo $row['nome_usuario'] ?>" placeholder="Digite o nome"></input>
 
         </div>
 
@@ -43,7 +43,7 @@
 
             <label for = "email_usuario">E-mail: </label>
             
-            <input type = "text" name = "email_usuario" size = "50" value = "<?php echo $row['email_usuario'] ?>"></input>
+            <input type = "text" name = "email_usuario" size = "50" value = "<?php echo $row['email_usuario'] ?>" placeholder="Digite o email"></input>
 
         </div>
 
@@ -53,13 +53,17 @@
 
             <label for = "telefone_usuario">Telefone: </label>
             
-            <input type = "text" name = "telefone_usuario" size = "30" value = "<?php echo $row['telefone_usuario'] ?>"></input>
+            <input type = "text" name = "telefone_usuario" size = "30" value = "<?php echo $row['telefone_usuario'] ?>" placeholder="Digite o telefone"></input>
 
         </div>
 
         <br>
 
         <button type = "submit">Enviar</button>
+
+        <a href='index.php'> Voltar</a>
+
+        <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
 
     </form>
 

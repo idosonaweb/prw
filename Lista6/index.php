@@ -13,9 +13,9 @@
     <div id = "menu">
 
         <ul>
-            <li><a href="cadastro_agenda.htm">Cadastrar Agenda</a></li>
+            <li><a href="cadastro_agenda.htm">Cadastrar Agendamento</a></li>
 
-            <li><a href="listar_agenda.php">Listar Agenda</a></li>
+            <li><a href="listar_agenda.php">Listar Agendamento</a></li>
         </ul>
 
     </div>

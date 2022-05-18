@@ -4,7 +4,7 @@
 
     $id_agenda = $_GET["id_agenda"];
 
-    $sql = "DELETE * FROM agenda where id_agenda =" . $id_agenda ;
+    $sql = "DELETE FROM agenda where id_agenda =" . $id_agenda ;
 
     echo "<h1>Exclusão de Agendamento</h1>" ;
 

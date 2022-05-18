@@ -27,8 +27,14 @@
         <tr>
             <th>Código</th>
             <th>Nome</th>
-            <th>E-mail</th>
+            <th>Apelido</th>
+            <th>Endereço</th>
+            <th>Bairro</th>
+            <th>Cidade</th>
+            <th>Estado</th>
             <th>Telefone</th>
+            <th>Celular</th>
+            <th>E-mail</th>
             <th>Data de Cadastro</th>
             <th>Excluir</th>
         </tr>
@@ -41,23 +47,23 @@
                 
                 echo "<td>" . $row['id_agenda'] . "</td>";
                 
-                echo "<td><a href='altera_agenda.php?id_usuario=".$row['id_agenda']."'>" .$row['nome_agenda']. "</a></td>";
+                echo "<td><a href='altera_agenda.php?id_agenda=".$row['id_agenda']."'>" .$row['nome']. "</a></td>";
                 
-                echo "<td>" . $row['apelido_agenda'] . "</td>";
+                echo "<td>" . $row['apelido'] . "</td>";
                 
-                echo "<td>" . $row['endereco_agenda'] . "</td>";
+                echo "<td>" . $row['endereco'] . "</td>";
                 
-                echo "<td>" . $row['bairro_agenda'] . "</td>";
+                echo "<td>" . $row['bairro'] . "</td>";
                 
-                echo "<td>" . $row['cidade_agenda'] . "</td>";
+                echo "<td>" . $row['cidade'] . "</td>";
                 
-                echo "<td>" . $row['estado_agenda'] . "</td>";
+                echo "<td>" . $row['estado'] . "</td>";
                 
-                echo "<td>" . $row['telefone_agenda'] . "</td>";
+                echo "<td>" . $row['telefone'] . "</td>";
                 
-                echo "<td>" . $row['celular_agenda'] . "</td>";
+                echo "<td>" . $row['celular'] . "</td>";
                 
-                echo "<td>" . $row['email_agenda'] . "</td>";
+                echo "<td>" . $row['email'] . "</td>";
 
                 echo "<td>" . $Data_Agenda . "</td>";
                 

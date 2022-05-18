@@ -8,13 +8,13 @@
 
     $Apelido_Agenda = $_GET["apelido_agenda"];
 
-    $Endereco_Agenda = $_GET["nome_agenda"];
+    $Endereco_Agenda = $_GET["endereco_agenda"];
 
-    $Bairro_Agenda = $_GET["nome_agenda"];
+    $Bairro_Agenda = $_GET["bairro_agenda"];
 
-    $Cidade_Agenda = $_GET["nome_agenda"];
+    $Cidade_Agenda = $_GET["cidade_agenda"];
 
-    $Estado_Agenda = $_GET["email_usuario"];
+    $Estado_Agenda = $_GET["estado_agenda"];
 
     $Fone_Agenda = $_GET["telefone_agenda"];
 
@@ -45,7 +45,7 @@
     echo "Data de Cadastro: " . $Data_Agenda . "</p>" ;
 
     $sql = "INSERT INTO agenda (nome, apelido, endereco, bairro, cidade, estado, telefone, celular, email, dt_cadastro)
-            values ('" . $Nome_Agenda. "', '" . $$Apelido_Agenda . "', '" . $Endereco_Agenda. "', '" . $$Bairro_Agenda . 
+            values ('" . $Nome_Agenda. "', '" . $Apelido_Agenda . "', '" . $Endereco_Agenda. "', '" . $Bairro_Agenda . 
                     "', '" . $Cidade_Agenda. "', '" . $Estado_Agenda. "', '" . $Fone_Agenda. "', '" . $Celular_Agenda. "', '" . $Email_Agenda. "', '" . $Data_Agenda. "')" ;
 
     $result = mysqli_query($con, $sql) ;

@@ -35,7 +35,7 @@
 
             <label for = "nome_agenda">Nome: </label>
             
-            <input type = "text" name = "nome_agenda" size = "50" value = "<?php echo $row['nome_agenda'] ?>" placeholder="Digite o nome"></input>
+            <input type = "text" name = "nome_agenda" size = "50" value = "<?php echo $row['nome'] ?>"></input>
 
         </div>
 
@@ -45,7 +45,7 @@
 
             <label for = "apelido_agenda">Apelido: </label>
             
-            <input type = "text" name = "apelido_agenda" size = "50" value = "<?php echo $row['apelido_agenda'] ?>" placeholder="Digite o apelido"></input>
+            <input type = "text" name = "apelido_agenda" size = "50" value = "<?php echo $row['apelido'] ?>"></input>
 
         </div>
 
@@ -55,7 +55,7 @@
 
             <label for = "endereco_agenda">Endereço: </label>
             
-            <input type = "text" name = "endereco_agenda" size = "50" value = "<?php echo $row['endereco_agenda'] ?>" placeholder="Digite o endereço"></input>
+            <input type = "text" name = "endereco_agenda" size = "50" value = "<?php echo $row['endereco'] ?>"></input>
 
         </div>
 
@@ -65,7 +65,7 @@
 
             <label for = "bairro_agenda">Bairro: </label>
             
-            <input type = "text" name = "bairro_agenda" size = "50" value = "<?php echo $row['bairro_agenda'] ?>" placeholder="Digite o bairro"></input>
+            <input type = "text" name = "bairro_agenda" size = "50" value = "<?php echo $row['bairro'] ?>"></input>
 
         </div>
 
@@ -75,7 +75,7 @@
 
             <label for = "cidade_agenda">Cidade: </label>
             
-            <input type = "text" name = "cidade_agenda" size = "50" value = "<?php echo $row['cidade_agenda'] ?>" placeholder="Digite a cidade"></input>
+            <input type = "text" name = "cidade_agenda" size = "50" value = "<?php echo $row['cidade'] ?>"></input>
 
         </div>
 
@@ -85,7 +85,7 @@
 
             <label for = "estado_agenda">Estado: </label>
             
-            <input type = "text" name = "estado_agenda" size = "50" value = "<?php echo $row['estado_agenda'] ?>" placeholder="Digite o estado"></input>
+            <input type = "text" name = "estado_agenda" size = "50" value = "<?php echo $row['estado'] ?>"></input>
 
         </div>
 
@@ -95,7 +95,7 @@
 
             <label for = "telefone_agenda">Telefone: </label>
             
-            <input type = "text" name = "telefone_agenda" size = "30" value = "<?php echo $row['telefone_agenda'] ?>" placeholder="Digite o telefone"></input>
+            <input type = "text" name = "telefone_agenda" size = "30" value = "<?php echo $row['telefone'] ?>"></input>
 
         </div>
 
@@ -105,7 +105,7 @@
 
             <label for = "celular_agenda">Celular: </label>
             
-            <input type = "text" name = "celular_agenda" size = "30" value = "<?php echo $row['celular_agenda'] ?>" placeholder="Digite o celular"></input>
+            <input type = "text" name = "celular_agenda" size = "30" value = "<?php echo $row['celular'] ?>"></input>
 
         </div>
 
@@ -115,7 +115,7 @@
 
             <label for = "email_agenda">E-mail: </label>
             
-            <input type = "text" name = "email_agenda" size = "50" value = "<?php echo $row['email_agenda'] ?>" placeholder="Digite o email"></input>
+            <input type = "text" name = "email_agenda" size = "50" value = "<?php echo $row['email'] ?>"></input>
 
         </div>
 

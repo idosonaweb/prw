@@ -8,13 +8,13 @@
 
     $Apelido = $_GET["apelido_agenda"];
 
-    $Endereco = $_GET["nome_agenda"];
+    $Endereco = $_GET["endereco_agenda"];
 
-    $Bairro = $_GET["nome_agenda"];
+    $Bairro = $_GET["bairro_agenda"];
 
-    $Cidade = $_GET["nome_agenda"];
+    $Cidade = $_GET["cidade_agenda"];
 
-    $Estado = $_GET["email_usuario"];
+    $Estado = $_GET["estado_agenda"];
 
     $Fone = $_GET["telefone_agenda"];
 
@@ -30,23 +30,23 @@
 
     $sql = "UPDATE agenda SET
             
-            nome_agenda ='". $Nome ."',
+            nome ='". $Nome ."',
             
-            apelido_agenda ='" . $Apelido . "',
+            apelido ='" . $Apelido . "',
             
-            endereco_agenda ='" . $Endereco . "',
+            endereco ='" . $Endereco . "',
             
-            bairro_agenda ='" . $Bairro . "',
+            bairro ='" . $Bairro . "',
             
-            cidade_agenda ='" . $Cidade . "',
+            cidade ='" . $Cidade . "',
             
-            estado_agenda ='" . $Estado . "',
+            estado ='" . $Estado . "',
             
-            telefone_agenda ='". $Fone . "',
+            telefone ='". $Fone . "',
             
-            celular_agenda ='" . $Celular . "',
+            celular ='" . $Celular . "',
             
-            email_agenda ='". $Email ."'
+            email ='". $Email ."'
             
             WHERE id_agenda =". $id_agenda ;
 

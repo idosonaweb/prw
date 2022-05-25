@@ -27,9 +27,13 @@
 
     <hr><br>
 
-    <form action = "altera_usuario_exe.php" method = "GET">
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
+    
+    <div id="teste">
+
+    <form action = "altera_usuario_exe.php" method = "POST" enctype='multipart/form-data'>
         
-        <div>
+        <div class="form-item">
 
             <label for = "nome_usuario">Nome: </label>
             
@@ -39,7 +43,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "email_usuario">E-mail: </label>
             
@@ -49,7 +53,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "telefone_usuario">Telefone: </label>
             
@@ -59,10 +63,20 @@
 
         <br>
 
-        <button type = "submit">Enviar</button>
+        <div class="form-item">
+                
+            <input type="file" id="foto" name="foto" accept="image/*" />
+            
+        </div>
 
-        <a href='index.php'> Voltar</a>
-
+        <div class="form-item">
+                
+            <input id="btn" type="submit" value="Enviar" >
+                    
+            <a href='index.php'> Voltar</a>
+            
+        </div>
+                
         <input name="id_usuario" type="hidden" value="<?php echo $row['id_usuario']?>">
 
     </form>

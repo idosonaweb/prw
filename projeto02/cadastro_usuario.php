@@ -2,11 +2,11 @@
     
     include ("conexao.php") ;
 
-    $foto_Nome = $_FILES ['foto']['name'] ;
+    $foto_Nome = $_FILES['foto']['name'] ;
 
     $target_dir = "upload/" ;
 
-    $target_file = $target_dir . basename($_FILES ['foto']['name']) ;
+    $target_file = $target_dir . basename($_FILES['foto']['name']) ;
 
     $imageFileType = strtolower(pathinfo($target_file, PATHINFO_EXTENSION));
 
@@ -34,8 +34,8 @@
 
     echo "Telefone: " . $Fone_Usuario . "</p>" ;
 
-    $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario, foto_blob, foto_nome)
-            values ('" . $Nome_Usuario. "', '" . $Email_Usuario . "', '" . $Fone_Usuario ."', '". $foto_Blob. "', '". $foto_Nome. "')" ;
+    $sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_nome) 
+	        VALUES ('".$nome."','".$email."','".$telefone."','".$foto_Blob."','".$foto_Nome."')";
     
     $result = mysqli_query($con, $sql) ;
 

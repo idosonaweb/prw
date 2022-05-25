@@ -38,7 +38,7 @@
         $sql = "UPDATE usuario SET
                 nome_usuario ='". $nome ."',
                 email_usuario ='". $email ."',
-                telefone_usuario ='". $telefone . "'
+                telefone_usuario ='". $telefone . "',
                 foto_blob='".$foto_Blob."',
                 foto_nome='".$foto_Nome."'
                 WHERE id_usuario=".$id_usuario;

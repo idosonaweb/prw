@@ -29,9 +29,13 @@
 
     <hr><br>
 
-    <form action = "altera_agenda_exe.php" method = "GET">
+    <div id="teste">
+
+    <?php echo "<img class='center' src='data:image/jpeg;base64,".base64_encode( $row["foto_blob"] )."' align='center' width='150' height='150'/>"; ?>  
+
+    <form action = "altera_agenda_exe.php" method = "POST" enctype='multipart/form-data'>
         
-        <div>
+        <div class="form-item">
 
             <label for = "nome_agenda">Nome: </label>
             
@@ -41,7 +45,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "apelido_agenda">Apelido: </label>
             
@@ -51,7 +55,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "endereco_agenda">Endereço: </label>
             
@@ -61,7 +65,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "bairro_agenda">Bairro: </label>
             
@@ -71,7 +75,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "cidade_agenda">Cidade: </label>
             
@@ -81,7 +85,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "estado_agenda">Estado: </label>
             
@@ -91,7 +95,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "telefone_agenda">Telefone: </label>
             
@@ -101,7 +105,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "celular_agenda">Celular: </label>
             
@@ -111,7 +115,7 @@
 
         <br>
 
-        <div>
+        <div class="form-item">
 
             <label for = "email_agenda">E-mail: </label>
             
@@ -121,9 +125,19 @@
 
         <br>
 
-        <button type = "submit">Enviar</button>
+        <div class="form-item">
+                
+            <input type="file" id="foto" name="foto" accept="image/*" />
+            
+        </div>
 
-        <a href='index.php'> Voltar</a>
+        <div class="form-item">
+                
+            <input id="btn" type="submit" value="Enviar" >
+                    
+            <a href='index.php'> Voltar</a>
+            
+        </div>
 
         <input name="id_agenda" type="hidden" value="<?php echo $row['id_agenda']?>">
 

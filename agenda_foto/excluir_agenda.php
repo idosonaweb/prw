@@ -2,7 +2,7 @@
 
     include('conexao.php');
 
-    $id_agenda = $_POST["id_agenda"];
+    $id_agenda = $_GET["id_agenda"];
 
     $sql = "DELETE FROM agenda where id_agenda =" . $id_agenda ;
 

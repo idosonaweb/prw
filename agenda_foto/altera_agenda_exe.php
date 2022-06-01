@@ -46,7 +46,7 @@
     
     echo "<p>Nome usuário: " . $Nome . "</p>" ;
 
-    if (isset($foto_Nome)) 
+    if (strlen($foto_Nome)>0) 
     {
         $sql = "UPDATE agenda SET
             

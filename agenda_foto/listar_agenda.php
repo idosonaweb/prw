@@ -20,7 +20,7 @@
 </head>
 <body>
     
-    <h1>Listagem de Agendamento</h1>
+    <h1 align = "center">Listagem de Agendamento</h1>
 
     <table align = "center" border = "1" widht = "500">
 

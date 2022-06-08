@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2</title>
+</head>
+
+<body>
+
+    <h1>Cadastro de Fluxo de Caixa</h1>
+
+    <hr><br>
+
+    <div id="teste">
+
+    <form action = "cadastro_fluxo_caixa.php" method = "POST">
+        
+        <div class="form-item">
+
+            <label for = "data_fluxo_caixa">Data: </label>
+            
+            <input type = "date" name = "data_fluxo_caixa" size = "50"></input>
+
+        </div>
+
+        <br>
+        
+        <div>
+            
+            <label for="tipo_fluxo_caixa">Tipo: </label>
+
+            <INPUT TYPE = "radio" NAME = "Acao"> Entrada </INPUT>
+            
+            <INPUT TYPE = "radio" NAME = "Acao">  Saída </INPUT>
+        
+        </div>
+
+        <br>
+
+        <div class="form-item">
+
+            <label for = "valor_fluxo_caixa">Valor: </label>
+            
+            <input type = "text" name = "valor_fluxo_caixa" size = "50"></input>
+
+        </div>
+
+        <br>
+
+        <div class="form-item">
+
+            <label for = "historico_fluxo_caixa">Histórico: </label>
+            
+            <input type = "text" name = "historico_fluxo_caixa" size = "50"></input>
+
+        </div>
+
+        <br>  
+
+        <div>
+
+            <label for = "cheque_fluxo_caixa">Cheque: </label>
+
+            <select name = "SelMenu" value = "Menu" size = "2">
+
+                <option>Sim</option>
+
+                <option>Não</option>
+
+            </select>
+
+        </div>
+        
+        <br>
+
+        <div class="form-item">
+
+            <input id="btn" type="submit" value="Enviar" >
+            
+            <a href='index.php'> Voltar</a>
+        
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

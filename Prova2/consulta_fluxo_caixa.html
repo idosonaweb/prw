@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prova 2</title>
+</head>
+
+<body>
+
+    <h1>Consulta de Fluxo de Caixa</h1>
+
+    <hr><br>
+
+    <div id="teste">
+
+    <form action = "consulta_fluxo_caixa.php" method = "POST">
+        
+        <div>
+            
+            <label for="tipo_fluxo_caixa">Tipo: </label>
+
+            <INPUT TYPE = "radio" NAME = "saldo"> Saldo Total </INPUT>
+            
+            <INPUT TYPE = "radio" NAME = "saida">  Total Saídas </INPUT>
+
+            <INPUT TYPE = "radio" NAME = "entrada">  Total Entrada </INPUT>
+        
+        </div>
+
+        <br>
+        
+        <br>
+
+        <div class="form-item">
+
+            <input id="btn" type="submit" value="Enviar" >
+            
+            <a href='index.php'> Voltar</a>
+        
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

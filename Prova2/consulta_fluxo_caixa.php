@@ -2,28 +2,42 @@
 
 include("conexao.php");
 
-$sql = "SELECT * FROM fluxo_agenda" ;
+$Caixa = $_POST['tipo'];
 
-$Resultado = $_POST["Resultado"] ;
-
-$result = mysqli_query($con, $sql);
-
-    if ($_POST["Resultado"] == 'Total Entrada') 
+    if ($Caixa == 'Entrada') 
     {
-        $sql = "select sum(valor) valor from fluxo_caixa where tipo = 'entrada'" ;
+        $sql = "select sum(valor) valor from fluxo_caixa where tipo = 'Entrada'" ;
+
+        $result = mysqli_query($con, $sql);
+
+        $row = mysqli_fetch_array($result);
+
+        echo "Total Entradas: R$ " . $row['valor'] ;
     }
     else
     {
-        if ($_POST["Resultado"] == 'Total Saídas') 
+        if ($Caixa == 'Saida') 
         {
-            $sql = "select sum(valor) valor from fluxo_caixa where tipo = 'saida'" ;
+            $sql = "select sum(valor) valor from fluxo_caixa where tipo = 'Saida'" ;
+
+            $result = mysqli_query($con, $sql);
+
+            $row = mysqli_fetch_array($result);
+
+            echo "Total Saídas: R$ " . $row['valor'] ;
         }
         else
         {
-            if ($_POST["Resultado"] == 'Saldo Total') 
+            if ($Caixa == 'Total') 
             {
-                $sql = "select sum (case when tipo = 'entrada' then valor else 0 end) - 
-                               sum (case when tipo = 'saida'  then valor else 0 end) as valor from fluxo_caixa ";
+                $sql = "select sum(case when tipo = 'Entrada' then valor else 0 end) - 
+                               sum(case when tipo = 'Saida'  then valor else 0 end) as valor from fluxo_caixa ";
+
+                $result = mysqli_query($con, $sql);
+
+                $row = mysqli_fetch_array($result);
+
+                echo "Saldo Total: R$ " . $row['valor'] ;
             }
         }
     }

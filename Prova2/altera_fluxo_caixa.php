@@ -14,6 +14,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -27,7 +28,7 @@
 
     <hr><br>
 
-    <div id="teste">
+    <div>
 
     <form action = "altera_fluxo_caixa_exe.php" method = "POST">
         
@@ -45,9 +46,9 @@
             
             <label for="tipo_fluxo_caixa">Tipo: </label>
 
-            <INPUT TYPE = "radio" NAME = "Acao"> Entrada </INPUT>
+            <INPUT TYPE = "radio" NAME = "tipo_fluxo_caixa" id="tipo_fluxo_caixa" value="Entrada"> Entrada </INPUT>
             
-            <INPUT TYPE = "radio" NAME = "Acao">  Saída </INPUT>
+            <INPUT TYPE = "radio" NAME = "tipo_fluxo_caixa" id="tipo_fluxo_caixa" value="Saida">  Saída </INPUT>
         
         </div>
 

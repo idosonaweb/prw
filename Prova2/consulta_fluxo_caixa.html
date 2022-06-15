@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="estilo.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -14,19 +15,22 @@
 
     <hr><br>
 
-    <div id="teste">
+    <div>
 
     <form action = "consulta_fluxo_caixa.php" method = "POST">
         
         <div>
             
-            <label for="tipo_fluxo_caixa">Tipo: </label>
+            <h4>
+            Tipo:
 
-            <INPUT TYPE = "radio" NAME = "saldo"> Saldo Total </INPUT>
+            <INPUT TYPE = "radio" NAME = "tipo" id="tipo" value="Total"> Saldo Total </INPUT>
             
-            <INPUT TYPE = "radio" NAME = "saida">  Total Saídas </INPUT>
+            <INPUT TYPE = "radio" NAME = "tipo" id="tipo" value="Saida">  Total Saídas </INPUT>
 
-            <INPUT TYPE = "radio" NAME = "entrada">  Total Entrada </INPUT>
+            <INPUT TYPE = "radio" NAME = "tipo" id="tipo" value="Entrada">  Total Entrada </INPUT>
+
+            </h4>
         
         </div>
 

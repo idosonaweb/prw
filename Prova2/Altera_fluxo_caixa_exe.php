@@ -6,7 +6,7 @@
 
     $Data_Fluxo = $_POST["data_fluxo_caixa"];
 
-    $Tipo = $_POST["Acao"];
+    $Tipo = $_POST["tipo_fluxo_caixa"];
 
     $Valor_Fluxo = $_POST["valor_fluxo_caixa"];
 
@@ -28,7 +28,7 @@
 
     echo "<h1>Alteração do Fluxo de Caixa</h1>" ;
 
-        $sql = "UPDATE fluxo_agenda SET
+        $sql = "UPDATE fluxo_caixa SET
             
             data ='". $Data_Fluxo ."',
             
@@ -38,7 +38,7 @@
             
             historico ='" . $Historico_Fluxo . "',
             
-            cheque ='" . $Cheque_Fluxo . "',
+            cheque ='" . $Cheque_Fluxo . "'
             
             WHERE id =". $id ;
 

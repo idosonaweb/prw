@@ -6,7 +6,7 @@
 
     $Data_Fluxo = $_POST["data_fluxo_caixa"];
 
-    $Tipo = $_POST["Acao"];
+    $Tipo = $_POST["tipo_fluxo_caixa"];
 
     $Valor_Fluxo = $_POST["valor_fluxo_caixa"];
 

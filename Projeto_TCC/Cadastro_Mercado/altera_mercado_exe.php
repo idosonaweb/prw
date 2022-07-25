@@ -21,35 +21,47 @@
     }
 
 
-    $id_usuario = $_POST["id_usuario"];
+    $id_mercado = $_POST["id_mercado"];
 
-    $nome = $_POST["nome_usuario"];
+    $Nome_Mercado = $_POST["nome_mercado"];
 
-    $email = $_POST["email_usuario"];
+    $Rua = $_POST["rua"];
 
-    $telefone = $_POST["telefone_usuario"];
+    $Bairro = $_POST["bairro"];
+    
+    $Cidade = $_POST["cidade"];
+
+    $Estado = $_POST["estado"];
+
+    $Cep = $_POST["cep"];
 
     echo "<h1>Alteração de dados</h1>" ;
     
-    echo "<p>Nome usuário: " . $nome . "</p>" ;
+    echo "<p>Nome mercado: " . $Nome_Mercado . "</p>" ;
 
     if(isset($foto_Nome))
     {
-        $sql = "UPDATE usuario SET
-                nome_usuario ='". $nome ."',
-                email_usuario ='". $email ."',
-                telefone_usuario ='". $telefone . "',
+        $sql = "UPDATE mercado SET
+                nome_mercado ='". $Nome_Mercado ."',
+                rua ='". $Rua ."',
+                bairro ='". $Bairro . "',
+                cidade ='". $Cidade . "',
+                estado ='". $Estado . "',
+                cep ='". $Cep . "',
                 foto_blob='".$foto_Blob."',
                 foto_nome='".$foto_Nome."'
-                WHERE id_usuario=".$id_usuario;
+                WHERE id_mercado=".$id_mercado;
       }
       else
       {
-        $sql = "UPDATE usuario SET
-                  nome_usuario='".$nome."',
-                  email_usuario='".$email."',
-                  telefone_usuario='".$telefone."'
-                WHERE id_usuario=".$id_usuario;
+        $sql = "UPDATE mercado SET
+                nome_mercado ='". $Nome_Mercado ."',
+                rua ='". $Rua ."',
+                bairro ='". $Bairro . "',
+                cidade ='". $Cidade . "',
+                estado ='". $Estado . "',
+                cep ='". $Cep . "'
+                WHERE id_mercado=".$id_mercado;
       }
       
     $result = mysqli_query($con, $sql);

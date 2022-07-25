@@ -20,29 +20,40 @@
         }
     }
 
-    echo "<h1>Cadastro de Clientes - IFSP</h1>" ;
+    echo "<h1>Cadastro de Mercado</h1>" ;
 
-    $Nome_Usuario = $_POST["nome_usuario"];
+    $Nome_Mercado = $_POST["nome_mercado"];
 
-    $Email_Usuario = $_POST["email_usuario"];
+    $Rua = $_POST["rua"];
 
-    $Fone_Usuario = $_POST["telefone_usuario"];
+    $Bairro = $_POST["bairro"];
+    
+    $Cidade = $_POST["cidade"];
 
-    echo "<p> Nome do usuário: " . $Nome_Usuario . "<br> <br>" ;
+    $Estado = $_POST["estado"];
 
-    echo "E-mail: " . $Email_Usuario . "<br> <br>" ;
+    $Cep = $_POST["cep"];
 
-    echo "Telefone: " . $Fone_Usuario . "</p>" ;
+    echo "<p> Nome do mercado: " . $Nome_Mercado . "<br> <br>" ;
 
-    $sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_nome) 
-	        VALUES ('".$nome."','".$email."','".$telefone."','".$foto_Blob."','".$foto_Nome."')";
+    echo "Rua: " . $Rua . "<br> <br>" ;
+
+    echo "Bairro: " . $Bairro . "</p>" ;
+
+    echo "Cidade: " . $Cidade . "</p>" ;
+
+    echo "Estado: " . $Estado . "</p>" ;
+
+    echo "Cep: " . $Cep . "</p>" ;
+
+    $sql = "INSERT INTO mercado (nome_mercado, rua, bairro, cidade, estado, cep, foto_blob, foto_nome) 
+	        VALUES ('".$Nome_Mercado."','".$Rua."','".$Bairro."','".$Cidade."','".$Estado."','".$Cep."','".$foto_Blob."','".$foto_Nome."')";
     
     $result = mysqli_query($con, $sql) ;
 
     if ($result) 
     {
         echo "Dados inseridos com sucesso" ;
-
     }
     else
     {

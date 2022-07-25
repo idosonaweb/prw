@@ -14,6 +14,8 @@
 
         <ul>
             <li><a href="cadastro_mercado.htm">Cadastrar Mercado</a></li>
+
+            <li><a href="listar_mercados.php">Listar Mercado</a></li>
         </ul>
 
     </div>

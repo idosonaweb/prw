@@ -29,6 +29,16 @@
 
     $telefone = $_POST["telefone_usuario"];
 
+    $Rua = $_POST["rua"];
+
+    $Bairro = $_POST["bairro"];
+    
+    $Cidade = $_POST["cidade"];
+
+    $Estado = $_POST["estado"];
+
+    $Cep = $_POST["cep"];
+
     echo "<h1>Alteração de dados</h1>" ;
     
     echo "<p>Nome usuário: " . $nome . "</p>" ;
@@ -39,6 +49,11 @@
                 nome_usuario ='". $nome ."',
                 email_usuario ='". $email ."',
                 telefone_usuario ='". $telefone . "',
+                rua ='". $Rua ."',
+                bairro ='". $Bairro . "',
+                cidade ='". $Cidade . "',
+                estado ='". $Estado . "',
+                cep ='". $Cep . "',
                 foto_blob='".$foto_Blob."',
                 foto_nome='".$foto_Nome."'
                 WHERE id_usuario=".$id_usuario;
@@ -48,7 +63,12 @@
         $sql = "UPDATE usuario SET
                   nome_usuario='".$nome."',
                   email_usuario='".$email."',
-                  telefone_usuario='".$telefone."'
+                  telefone_usuario='".$telefone."',
+                  rua ='". $Rua ."',
+                  bairro ='". $Bairro . "',
+                  cidade ='". $Cidade . "',
+                  estado ='". $Estado . "',
+                  cep ='". $Cep . "'
                 WHERE id_usuario=".$id_usuario;
       }
       

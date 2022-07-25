@@ -2,13 +2,13 @@
     
     $hostname = "localhost" ;
 
-    $port = 3307 ;
+    $port = 3306 ;
 
     $username = "root" ;
 
     $password = "" ;
 
-    $database = "projeto02" ;
+    $database = "cadastro_usuario" ;
 
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
 

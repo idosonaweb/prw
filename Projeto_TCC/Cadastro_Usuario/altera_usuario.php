@@ -64,6 +64,56 @@
         <br>
 
         <div class="form-item">
+
+            <label for = "rua">Rua: </label>
+            
+            <input type = "text" name = "rua" size = "50" value = "<?php echo $row['rua'] ?>"></input>
+
+        </div>
+
+        <br>
+
+        <div class="form-item">
+
+            <label for = "bairro">Bairro: </label>
+            
+            <input type = "text" name = "bairro" size = "50" value = "<?php echo $row['bairro'] ?>"></input>
+
+        </div>
+
+        <br>
+
+        <div class="form-item">
+
+            <label for = "cidade">Cidade: </label>
+            
+            <input type = "text" name = "cidade" size = "50" value = "<?php echo $row['cidade'] ?>"></input>
+
+        </div>
+
+        <br>
+
+        <div class="form-item">
+
+            <label for = "estado">Estado: </label>
+            
+            <input type = "text" name = "estado" size = "30" value = "<?php echo $row['estado'] ?>"></input>
+
+        </div>
+
+        <br>
+
+        <div class="form-item">
+
+            <label for = "cep">CEP: </label>
+            
+            <input type = "text" name = "cep" size = "30" value = "<?php echo $row['cep'] ?>"></input>
+
+        </div>
+
+        <br>
+
+        <div class="form-item">
                 
             <input type="file" id="foto" name="foto" accept="image/*" />
             

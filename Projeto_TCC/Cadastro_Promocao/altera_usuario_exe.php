@@ -23,37 +23,22 @@
 
     $id_usuario = $_POST["id_usuario"];
 
-    $Nome_Usuario = $_POST["nome_usuario"];
+    $nome = $_POST["nome_usuario"];
 
-    $Email_Usuario = $_POST["email_usuario"];
+    $email = $_POST["email_usuario"];
 
-    $Fone_Usuario = $_POST["telefone_usuario"];
-
-    $Rua = $_POST["rua"];
-
-    $Bairro = $_POST["bairro"];
-    
-    $Cidade = $_POST["cidade"];
-
-    $Estado = $_POST["estado"];
-
-    $Cep = $_POST["cep"];
+    $telefone = $_POST["telefone_usuario"];
 
     echo "<h1>Alteração de dados</h1>" ;
     
-    echo "<p>Nome usuário: " . $Nome_Usuario . "</p>" ;
+    echo "<p>Nome usuário: " . $nome . "</p>" ;
 
     if(isset($foto_Nome))
     {
         $sql = "UPDATE usuario SET
-                nome_usuario ='". $Nome_Usuario ."',
-                email_usuario ='". $Email_Usuario ."',
-                telefone_usuario ='". $Fone_Usuario . "',
-                rua ='". $Rua ."',
-                bairro ='". $Bairro . "',
-                cidade ='". $Cidade . "',
-                estado ='". $Estado . "',
-                cep ='". $Cep . "',
+                nome_usuario ='". $nome ."',
+                email_usuario ='". $email ."',
+                telefone_usuario ='". $telefone . "',
                 foto_blob='".$foto_Blob."',
                 foto_nome='".$foto_Nome."'
                 WHERE id_usuario=".$id_usuario;
@@ -61,14 +46,9 @@
       else
       {
         $sql = "UPDATE usuario SET
-                  nome_usuario='".$Nome_Usuario."',
-                  email_usuario='".$Email_Usuario."',
-                  telefone_usuario='".$Fone_Usuario."',
-                  rua ='". $Rua ."',
-                  bairro ='". $Bairro . "',
-                  cidade ='". $Cidade . "',
-                  estado ='". $Estado . "',
-                  cep ='". $Cep . "'
+                  nome_usuario='".$nome."',
+                  email_usuario='".$email."',
+                  telefone_usuario='".$telefone."'
                 WHERE id_usuario=".$id_usuario;
       }
       

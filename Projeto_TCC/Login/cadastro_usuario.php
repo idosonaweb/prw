@@ -28,34 +28,14 @@
 
     $Fone_Usuario = $_POST["telefone_usuario"];
 
-    $Rua = $_POST["rua"];
-
-    $Bairro = $_POST["bairro"];
-    
-    $Cidade = $_POST["cidade"];
-
-    $Estado = $_POST["estado"];
-
-    $Cep = $_POST["cep"];
-
     echo "<p> Nome do usuário: " . $Nome_Usuario . "<br> <br>" ;
 
     echo "E-mail: " . $Email_Usuario . "<br> <br>" ;
 
     echo "Telefone: " . $Fone_Usuario . "</p>" ;
 
-    echo "Rua: " . $Rua . "<br> <br>" ;
-
-    echo "Bairro: " . $Bairro . "</p>" ;
-
-    echo "Cidade: " . $Cidade . "</p>" ;
-
-    echo "Estado: " . $Estado . "</p>" ;
-
-    echo "Cep: " . $Cep . "</p>" ;
-
-    $sql = "INSERT INTO usuario (nome_usuario, email_usuario, telefone_usuario, rua, bairro, cidade, estado, cep, foto_blob, foto_nome) 
-	        VALUES ('".$Nome_Usuario."','".$Email_Usuario."','".$Fone_Usuario."','".$Rua."','".$Bairro."','".$Cidade."','".$Estado."','".$Cep."','".$foto_Blob."','".$foto_Nome."')";
+    $sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_nome) 
+	        VALUES ('".$nome."','".$email."','".$telefone."','".$foto_Blob."','".$foto_Nome."')";
     
     $result = mysqli_query($con, $sql) ;
 

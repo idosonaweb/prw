@@ -2,11 +2,11 @@
 
     include('conexao.php');
 
-    $id_usuario = $_GET["id_usuario"];
+    $id = $_GET["id"];
 
-    $sql = "DELETE FROM usuario WHERE id_usuario=" . $id_usuario ;
+    $sql = "DELETE FROM produto where id =" . $id ;
 
-    echo "<h1>Exclusão de Usuário</h1>" ;
+    echo "<h1>Exclusão de produto</h1>" ;
 
     $result = mysqli_query($con, $sql);
 
@@ -21,4 +21,4 @@
 
 ?>
 
-<a href="listar_usuarios.php">Voltar</a>
+<a href="listar_produto.php">Voltar</a>

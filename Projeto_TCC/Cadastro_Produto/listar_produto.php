@@ -2,7 +2,7 @@
 
     include("conexao.php");
 
-    $sql = "SELECT * FROM fluxo_caixa" ;
+    $sql = "SELECT * FROM produto" ;
 
     $result = mysqli_query($con, $sql);
 
@@ -16,21 +16,20 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem de Fluxos de Caixas</title>
+    <title>Listagem de Produtos</title>
 </head>
 <body>
     
-    <h1 align = "center">Consulta de Fluxos de Caixa</h1>
+    <h1 align = "center">Consulta de Produtos</h1>
 
     <table align = "center" border = "1" widht = "500">
 
         <tr>
-            <th>Código</th>
-            <th>Data</th>
-            <th>Tipo</th>
+            <th>Data Inicial</th>
+            <th>Data Final</th>
             <th>Valor</th>
-            <th>Histórico</th>
-            <th>Cheque</th>
+            <th>Quantidade</th>
+            <th>Marca</th>
             <th>Excluir</th>
         </tr>
 
@@ -40,19 +39,17 @@
             {
                 echo "<tr>";
                 
-                echo "<td>" . $row['id'] . "</td>";
+                echo "<td>" . $row['data_inicial'] . "</td>";
                 
-                echo "<td>" . $row['data'] . "</td>";
-                
-                echo "<td>" . $row['tipo'] . "</td>";
+                echo "<td>" . $row['data_final'] . "</td>";
                 
                 echo "<td>" . $row['valor'] . "</td>";
 
-                echo "<td><a href='altera_fluxo_caixa.php?id=".$row['id']."'>" .$row['historico']. "</a></td>";
+                echo "<td>" . $row['quantidade'] . "</td>";
                 
-                echo "<td>" . $row['cheque'] . "</td>";
+                echo "<td>" . $row['marca'] . "</td>";
                 
-                echo "<td><a href='excluir_fluxo_caixa.php?id=".$row['id']."'>Excluir</a></td>";                
+                echo "<td><a href='excluir_produto.php?id=".$row['data_final']."'>Excluir</a></td>";                
                 
                 echo "</tr>";
             }

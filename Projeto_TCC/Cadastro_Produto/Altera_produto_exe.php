@@ -2,45 +2,31 @@
 
     include('conexao.php');
 
-    $id = $_POST["id"];
+    $Data_Inicial = $_POST["data_inicial_produto"];
 
-    $Data_Fluxo = $_POST["data_fluxo_caixa"];
+    $Data_Final = $_POST["data_final_produto"];
 
-    $Tipo = $_POST["tipo_fluxo_caixa"];
+    $Quantidade = $_POST["quantidade_produto"];
 
-    $Valor_Fluxo = $_POST["valor_fluxo_caixa"];
+    $Marca = $_POST["marca_produto"];
 
-    $Historico_Fluxo = $_POST["historico_fluxo_caixa"];
+    $Valor = $_POST["valor_produto"];
 
-    $Cheque_Fluxo = null ;
+    echo "<h1>Alteração do Produto</h1>" ;
 
-    if ($_POST["SelMenu"] == "Sim") 
-    {
-        $Cheque_Fluxo = "Sim" ;
-    }
-    else
-    {
-        if ($_POST["SelMenu"] == "Não") 
-        {
-            $Cheque_Fluxo = "Não" ;
-        }
-    }
-
-    echo "<h1>Alteração do Fluxo de Caixa</h1>" ;
-
-        $sql = "UPDATE fluxo_caixa SET
+        $sql = "UPDATE produto SET
             
-            data ='". $Data_Fluxo ."',
+            data_inicial ='". $Data_Inicial ."',
             
-            tipo ='" . $Tipo . "',
+            data_final ='" . $Data_Final . "',
             
-            valor ='" . $Valor_Fluxo . "',
+            valor ='" . $Valor . "',
             
-            historico ='" . $Historico_Fluxo . "',
+            quantidade ='" . $Quantidade . "',
             
-            cheque ='" . $Cheque_Fluxo . "'
+            marca ='" . $Marca . "'
             
-            WHERE id =". $id ;
+            WHERE data_final =". $Data_Final  ;
 
     $result = mysqli_query($con, $sql);
 

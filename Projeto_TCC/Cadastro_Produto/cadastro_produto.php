@@ -4,41 +4,19 @@
 
     echo "<h1>Cadastro de Produto</h1>" ;
 
-    $Data_Fluxo = $_POST["data_fluxo_caixa"];
+    $Data_Inicial = $_POST["data_inicial_produto"];
 
-    $Tipo = $_POST["tipo_fluxo_caixa"];
+    $Data_Final = $_POST["data_final_produto"];
 
-    $Valor_Fluxo = $_POST["valor_fluxo_caixa"];
+    $Quantidade = $_POST["quantidade_produto"];
 
-    $Historico_Fluxo = $_POST["historico_fluxo_caixa"];
+    $Marca = $_POST["marca_produto"];
 
-    $Cheque_Fluxo = null ;
+    $Valor = $_POST["valor_produto"];
 
-    if ($_POST["SelMenu"] == "Sim") 
-    {
-        $Cheque_Fluxo = "Sim" ;
-    }
-    else
-    {
-        if ($_POST["SelMenu"] == "Não") 
-        {
-            $Cheque_Fluxo = "Não" ;
-        }
-    }
-
-    echo "<p> Data: " . $Data_Fluxo . "<br> <br>" ;
-
-    echo "Tipo: " . $Tipo . "<br> <br>" ;
-
-    echo "Valor: R$ " . $Valor_Fluxo . "<br> <br>" ;
-
-    echo "Histórico: " . $Historico_Fluxo . "<br> <br>" ;
-
-    echo "Cheque: " . $Cheque_Fluxo . "<br> <br>" ;
-
-    $sql = "INSERT INTO produto (data, tipo, valor, historico, cheque)
-            values ('" . $Data_Fluxo. "', '" . $Tipo . "', '" . $Valor_Fluxo. "', '" . $Historico_Fluxo . 
-                    "', '" . $Cheque_Fluxo. "')" ;
+    $sql = "INSERT INTO produto (data_inicial, data_final, valor, quantidade, marca)
+            values ('" . $Data_Inicial. "', '" . $Data_Final . "', '" . $Valor. "', '" . $Quantidade . 
+                    "', '" . $Marca. "')" ;
 
     $result = mysqli_query($con, $sql) ;
 

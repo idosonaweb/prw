@@ -2,9 +2,9 @@
 
     include('conexao.php');
 
-    $id = $_GET["id"];
+    $Data_Final = $_POST["data_final"];
 
-    $sql = "DELETE FROM produto where id =" . $id ;
+    $sql = "DELETE FROM produto where data_inicial =" . $Data_Inicial ;
 
     echo "<h1>Exclusão de produto</h1>" ;
 

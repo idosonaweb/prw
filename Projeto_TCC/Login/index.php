@@ -50,8 +50,4 @@
         }
     }
 
-    $Email = $_POST["email"];
-
-    $Senha = $_POST["senha"];
-
 ?>

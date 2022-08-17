@@ -7,7 +7,7 @@
 
     if(!isset($_SESSION['id'])) 
     {
-        die("Você não está logado.<p><a href=\"index.html\">Entrar</a></p>");
+        die("Você não está logado.<p><a href=\"index.htm\">Entrar</a></p>");
     }
 
 ?>

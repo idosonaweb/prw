@@ -20,22 +20,26 @@
         }
     }
 
-    echo "<h1>Cadastro de Clientes - IFSP</h1>" ;
+    echo "<h1>Cadastro de Compras</h1>" ;
 
-    $Nome_Usuario = $_POST["nome_usuario"];
+    $Data_compra = $_POST["data_compra"];
 
-    $Email_Usuario = $_POST["email_usuario"];
+    $Descricao_compra = $_POST["descricao_compra"];
 
-    $Fone_Usuario = $_POST["telefone_usuario"];
+    $Quantidade_produtos = $_POST["qtd_produtos"];
 
-    echo "<p> Nome do usuário: " . $Nome_Usuario . "<br> <br>" ;
+    $Valor_compra = $_POST["valor_compra"];
 
-    echo "E-mail: " . $Email_Usuario . "<br> <br>" ;
+    $Nota_fiscal = $_POST["foto_nota_fiscal"];
 
-    echo "Telefone: " . $Fone_Usuario . "</p>" ;
+    echo "<p> Data da Compra: " . $Data_compra . "<br> <br>" ;
 
-    $sql = "INSERT INTO usuario (nome_usuario,email_usuario,telefone_usuario, foto_blob, foto_nome) 
-	        VALUES ('".$nome."','".$email."','".$telefone."','".$foto_Blob."','".$foto_Nome."')";
+    echo "Descrição da Compra: " . $Descricao_compra . "<br> <br>" ;
+
+    echo "Valor da Compra: " . $Valor_compra . "</p>" ;
+
+    $sql = "INSERT INTO usuario (data_compra,descricao_compra,qtd_produtos, valor_compra, nota_fiscal_foto) 
+	        VALUES ('".$data_compra."','".$descricao_compra."','".$qtd_produtos."','".$valor_compra."','".$foto_nota_fiscal."')";
     
     $result = mysqli_query($con, $sql) ;
 

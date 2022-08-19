@@ -8,7 +8,7 @@
 
     $password = "" ;
 
-    $database = "projeto02" ;
+    $database = "compras" ;
 
     $con = mysqli_connect($hostname, $username, $password, $database, $port);
 
